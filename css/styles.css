@@ -1,0 +1,253 @@
+/* Custom Fonts */
+@import url('https://fonts.googleapis.com/css?family=Kurale|Open+Sans:400,600,800');
+/*
+ * font-family: 'Open Sans', sans-serif;
+ * font-family: 'Kurale', serif;
+ */
+
+ /* Self Hosted Fontawesome 5 */
+@import url('fontawesome-all.min.css');
+
+
+/* Global Styles */
+body{
+	background-color:#4c2e05;
+	color:#535353;
+	font-family: 'Open Sans', Verdana, sans-serif;
+	font-size:14px;
+	font-weight: 400;
+}
+
+img{
+	max-width: 100%;
+}
+
+.content{
+	overflow: hidden;
+}
+
+*:focus{
+	border: none;
+	outline: none;
+}
+
+
+/* Font Styles */
+.heading, .cta-full, .logo-name{
+	font-family: 'Kurale', Georgia, serif;
+	font-weight: 600;
+	line-height: 1.3em;
+}
+.large{
+	font-size:23px;
+	display:inline-block;
+	margin:0 15px;
+}
+
+.heading{
+	font-size:16px;
+}
+.logo-name{
+	font-size:37px;
+}
+
+/* font-colors */
+.brown{
+	color:#4c2E05;
+}
+
+.light-green{
+	color: #AEBD93;
+}
+
+
+/*bkg colors*/
+.white-bkg{
+	background-color: #f5f5f5;
+}
+.dark-green-bkg{
+	background-color: #7A8450;
+}
+
+/* Header Section */
+.logo-image-name{
+	padding-top:20px;
+}
+.logo-image{
+	float:left;
+	margin-right:15px;
+	width:20%;
+}
+.logo-image a{
+	display:inline-block;
+}
+
+/* Social Media */
+.social-media{
+	font-size:24px;
+	width:100%;
+}
+.social-media a{
+	margin:0 5px;
+	-webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+/* Promotional Area Settings */
+.promotional .section-header{
+	padding:30px 0;
+	font-size:26px;
+}
+
+.products{
+	padding-top:30px;
+	padding-bottom:30px;
+}
+
+.products img{
+	border: 1px solid #aebd93;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,.5);
+	box-shadow: 0 0 2px 0 rgba(0,0,0,.5);
+}
+
+/* Links and Buttons */
+
+a{
+	color:#7a8450;
+}
+a:hover,a:focus, a:active{
+	text-decoration: none;
+	color:#aebd93;
+}
+
+.logo-name a:hover,
+.logo-name a:focus,
+.logo-name a:active{
+	color:#7a8450;
+}
+.cta{
+	font-weight: 600;
+    font-size: 14px;
+}
+
+.cta a{
+	background-color: #7a8450;
+    padding:8px 20px;
+    margin:10px 0;
+    display:inline-block;
+    color: #4c2e05;
+    border-radius: 5px;
+    
+    border:1px solid #7a8450;
+
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.cta a:hover{
+	color:#7a8450;
+	text-decoration: none;
+}
+
+.cta a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #4c2e05;
+    border-radius: 5px;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.cta a:hover:before, .cta a:focus:before, .cta a:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.cta-full{
+	padding:30px 0;
+	font-size:23px;
+}
+.cta-full a{
+	color:#7a8450;
+	position:relative;
+	display:inline-block;
+	transform: perspective(1px) translateZ(0);
+	-webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    padding:0 30px;
+}
+.cta-full a:hover, .cta-full a:focus{
+	color:#aebd93;
+	text-decoration: none;
+}
+
+.cta-full a:before{
+	content:"\f105";
+	position:absolute;
+	right:10px;
+	font-family:"Font Awesome 5 Free";
+	-webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.cta-full a:hover:before, .cta-full a:focus:before, .cta-full a:active:before {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+}
+
+
+
+
+
+@media (min-width:480px){
+	.heading{
+		font-size:30px;
+	}
+	.large{
+		font-size:40px;
+		margin:0 30px;
+	}
+	.cta{
+		font-size:20px;
+	}
+	.cta-full{
+		font-size:30px;
+	}
+	.logo-image{
+		width:82px;
+		height:auto;
+	}
+	.logo-name{
+		font-size:55px;
+	}
+	.social-media{
+		font-size: 30px;
+	}
+	.logo-image-name{
+		padding-top:20px;
+		padding-bottom:20px;
+	}
+}
